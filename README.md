@@ -1,4 +1,4 @@
-# IMGWaktualnedane
+# Aktualne (rzeczywiste) dane ze stacji IMGW
 Funkcja tworząca aktualne dane, pobrane z serwisu IMGW.
 
 
