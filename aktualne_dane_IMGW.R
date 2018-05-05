@@ -24,7 +24,7 @@ IMGW_aktualne <- function(){
   IMGW[,3] <- as.POSIXct(strptime(IMGW[,3], "%Y-%m-%d"), tz = "UTC")
   
   
-  miasta <- read.csv("/home/meteors/wspolrzedne.txt", sep=";", header = T)
+  miasta <- read.csv("http://endemit.pl/wspolrzedne.txt", sep=";", header = T)
   colnames(miasta) <- c("Nazwa_stacji", "x", "y")
   
   IMGW <- merge(IMGW, miasta, "Nazwa_stacji")
