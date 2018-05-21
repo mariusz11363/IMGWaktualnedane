@@ -3,6 +3,9 @@ Funkcja pobierająca aktualne dane z API IMGW.
 
 
 ## Użycie
+
+Należy skopiować funkcję z pliku "aktualne_dane_IMGW.R"
+
 ``` r
 IMGW <- IMGW_aktualne() #domyślne filtrowanie danych (tylko najnowsza godzina, IMGW czasami wysyła dane z przesunięciem czasu) i domyślna                                                                                                                             strefa czasowa
 ```
