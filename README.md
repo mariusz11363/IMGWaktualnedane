@@ -3,7 +3,10 @@ Funkcja tworząca aktualne dane, pobrane z serwisu IMGW.
 
 
 ## Użycie
+IMGW <- IMGW_aktualne() #domyślne filtrowanie danych (tylko najnowsza godzina, IMGW czasami wysyła dane z przesunięciem czasu) i domyślna                                                                                                                             strefa czasowa
 
-Należy użyć funkcji z pliku "aktualne_dane_IMGW.R", w programie "R". A następnie wykorzystać kod:
 
-###IMGW_aktualne()
+IMGW <- IMGW_aktualne(filtrowanie=F) #brak filtrowania dane - oryginalne dane z API IMGW
+
+
+IMGW <- IMGW_aktualne(filtrowanie = T, strefa_czasowa=-1) #ustawiamy strefę czasową, IMGW podaje dane w czasie UTC
